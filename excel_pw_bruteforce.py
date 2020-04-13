@@ -1,8 +1,13 @@
 #WRITTEN BY: ALI ALNUAIMI ~ https://www.linkedin.com/in/ali-alnuaimi-9847a1164/
+
+#INTRO: Use to brute force password protected excel files. 
+
 #USAGE:
     #1- CMD: Enter the folder where this script is located
     #2- CMD: Type "excel_pw_bruteforce.py" and follow the instructions
+    
 #REQUIREMENTS: Below libraries to be installed "pip install <lib_name>"
+
 #NOTES: FOR EDUCATION PURPOSES ONLY
 
 import tempfile, shutil, os
