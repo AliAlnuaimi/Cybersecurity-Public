@@ -1,5 +1,7 @@
 #WRITTEN BY: ALI ALNUAIMI ~ https://www.linkedin.com/in/ali-alnuaimi-9847a1164/
 
+#INTRO: Use to brute force password protected excel files. 
+
 #USAGE:
     #1- CMD: Enter the folder where this script is located
     #2- CMD: Type "word_pw_bruteforce.py" and follow the instructions
