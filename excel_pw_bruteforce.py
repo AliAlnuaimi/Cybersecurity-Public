@@ -1,7 +1,8 @@
 #WRITTEN BY: ALI ALNUAIMI ~ https://www.linkedin.com/in/ali-alnuaimi-9847a1164/
 
-#INTRO: Use to brute force password protected excel files. 
-
+#OBJECTIVE:
+    #brute force password protected excel files.
+    
 #USAGE:
     #1- CMD: Enter the folder where this script is located
     #2- CMD: Type "excel_pw_bruteforce.py" and follow the instructions
@@ -22,7 +23,7 @@ def create_temporary_copy(path):
     shutil.copy2(path, temp_path)
     return temp_path
 
-def find_password():
+def find_excel_password(file, password_list):
     print ("Starting ...")
 
     instance = Dispatch('Excel.Application')
@@ -46,10 +47,13 @@ def find_password():
     os.remove(temp_file)
 
 
-file = ""
-password_list = []
+
 
 if __name__ == '__main__':
+
+    file = ""
+    password_list = []
+
     while True:
         input1 = input('File to bruteforce (.xlsx): ')
         if (input1.split(".")[-1] == "xlsx" and os.path.exists(input1)):
@@ -68,4 +72,4 @@ if __name__ == '__main__':
             print ("File type not supported or file doesn't exist")
 
 
-    find_password()
+    find_password(file, password_list)
